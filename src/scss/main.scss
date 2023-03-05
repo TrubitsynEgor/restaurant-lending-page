@@ -1,0 +1,21 @@
+//* components basic
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+//* components main
+@import "./components/header";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/history";
+@import "./components/reservation";
+@import "./components/dishes";
+@import "./components/menu";
+@import "./components/testimonials";
+@import "./components/galery";
+@import "./components/chefs";
+
+@import "./components/footer";
+//* components reused

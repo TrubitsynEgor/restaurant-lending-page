@@ -1,0 +1,104 @@
+.menu {
+  background: url('../img/menu_bg.png');
+
+  padding-top: 98px;
+  padding-bottom: 226px;
+
+  &__title {
+    margin: 0;
+    padding-left: 8px;
+    padding-bottom: 138px;
+  }
+
+  &__slider {}
+
+  &__slide {
+    position: relative;
+    background-color: var(--light);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 69px 0;
+    padding-bottom: 29px;
+
+    &.recommendation {
+      .menu__slide-recommendation {
+        display: flex;
+      }
+    }
+  }
+
+  &__slide-recommendation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 124px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--brandyPunch);
+    display: none;
+  }
+
+  &__slide-img {
+    padding-bottom: 19px;
+    position: relative;
+
+    & img {
+      padding-top: 11px;
+
+    }
+  }
+
+  &__slide-price {
+    position: absolute;
+    right: -1px;
+    bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+    font-family: 'Cookie';
+    font-size: 30px;
+    line-height: 33px;
+    color: var(--light);
+    border-radius: 100%;
+    background: var(--brandyPunch);
+    border: 7px solid var(--light);
+
+  }
+
+  &__slide-title {
+    margin: 0;
+    padding-bottom: 16px;
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--black);
+  }
+
+  &__slide-descr {
+    padding: 0 70px;
+    padding-bottom: 13px;
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black);
+  }
+
+  &__slide-btn {
+    padding: 0 31px;
+    padding-top: 3px;
+    font-size: 16px;
+  }
+}

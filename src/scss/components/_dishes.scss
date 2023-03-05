@@ -1,0 +1,116 @@
+.dishes {
+  padding-top: 132px;
+  padding-bottom: 149px;
+
+  @include mobile {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: 143px;
+
+    @include mobile {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 30px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    & img {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      background: url('../img/dishes-img-big.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 320px;
+      min-height: 478px;
+      overflow: hidden;
+    }
+  }
+
+  &__right {
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+  }
+
+  &__right-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include mobile {
+      gap: 10px;
+    }
+  }
+
+  &__right-caption {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Tinos';
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--black);
+    padding-bottom: 30px;
+
+    @include mobile {
+      font-size: 22px;
+      line-height: 25px;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+
+    }
+
+
+
+    & span:first-child {
+      position: relative;
+      padding-right: 205px;
+
+      @media screen and (max-width:700px) {
+        padding-right: 25px;
+      }
+
+      @include mobile {
+        padding-right: 0px;
+
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px dashed #000000;
+        width: 190px;
+
+        @media screen and (max-width:700px) {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "OpenSans", sans-serif;
+  --content-width: 1110px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+
+  // colors
+  --light: #ffffff;
+  --black: #000000;
+  --flushOrange: #FF7400;
+  --brandyPunch: #D67E34;
+  --muddyWaters: #BC9060;
+  --mineShaft: #2C2C2C;
+  --doveGray: #656363;
+}

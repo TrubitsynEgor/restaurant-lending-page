@@ -1,0 +1,46 @@
+.chefs {
+  padding-top: 94px;
+  padding-bottom: 96px;
+
+  @include mobile {
+    padding-top: 44px;
+    padding-bottom: 46px;
+  }
+
+  &__title {
+    padding-bottom: 107px;
+
+    @include mobile {
+      padding-bottom: 46px;
+    }
+
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    grid-column: 4 span;
+
+    & img {
+      @include tablet {
+        width: 288px;
+        height: 380px;
+      }
+    }
+  }
+}
+
+.container {}
+
+.title {}
